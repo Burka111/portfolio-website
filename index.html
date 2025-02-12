@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A portfolio showcasing my projects and skills as a developer.">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,6 +13,7 @@
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -23,11 +25,22 @@
         <p>Hi! I'm a developer who loves coding and creating interesting projects.</p>
     </section>
     
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Node.js</li>
+            <li>Python, Django</li>
+            <li>SQL, MongoDB</li>
+        </ul>
+    </section>
+    
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <h3>Project Title</h3>
-            <p>Project description.</p>
+            <h3>Portfolio Website</h3>
+            <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+            <img src="portfolio-image.jpg" alt="Portfolio Website Screenshot" width="300">
             <a href="#" class="btn">View</a>
         </div>
     </section>
@@ -35,6 +48,18 @@
     <section id="contact">
         <h2>Contact</h2>
         <p>Get in touch with me via <a href="mailto:example@example.com">email</a> or <a href="https://github.com/yourusername">GitHub</a>.</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit" class="btn">Send</button>
+        </form>
     </section>
     
     <footer>
