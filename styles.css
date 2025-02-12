@@ -18,6 +18,7 @@ header {
     top: 0;
     left: 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
 }
 
 nav ul {
@@ -51,6 +52,38 @@ section {
 h2 {
     font-size: 2em;
     color: #222;
+}
+
+/* Фото профиля */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Стили для скиллов */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    background: #74ebd5;
 }
 
 /* Кнопки */
