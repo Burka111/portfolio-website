@@ -1,22 +1,29 @@
 /* Общие стили */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    color: #333;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-/* Стили для заголовка */
+/* Навигация */
 header {
-    background-color: #333;
+    background: rgba(34, 34, 34, 0.9);
     color: white;
-    padding: 20px;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -28,36 +35,86 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-}
-
-/* Стили для секций */
-section {
-    margin: 50px 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Стили для кнопки */
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
     transition: 0.3s;
 }
 
-.btn:hover {
-    background-color: #0056b3;
+nav ul li a:hover {
+    color: #74ebd5;
 }
 
-/* Стили для подвала */
-footer {
-    background-color: #333;
+/* Разделы */
+section {
+    padding: 80px 20px;
+    margin-top: 60px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #222;
+}
+
+/* Кнопки */
+.btn {
+    background: #007bff;
     color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1em;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Проекты */
+.project {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Форма */
+form {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
     padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Подвал */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
     margin-top: 20px;
 }
