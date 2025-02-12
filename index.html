@@ -3,111 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A portfolio showcasing my projects and skills as a developer.">
-    <title>Portfolio</title>
+    <title>Burka | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #222;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        .btn {
-            background: #007bff;
-            color: white;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 10px;
-        }
-        .btn:hover {
-            background: #0056b3;
-        }
-        section {
-            padding: 60px 20px;
-            margin-top: 60px;
-        }
-    </style>
 </head>
 <body>
     <header>
-        <h1>My Portfolio</h1>
         <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
+            <div class="logo">Burka</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
+
+    <section class="hero">
+        <h1>Hi, I'm Burka 👋</h1>
+        <p>Frontend & Backend Developer | Passionate about modern web technologies</p>
+        <a href="#projects" class="btn">View My Work</a>
+    </section>
+
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi! I'm a developer who loves coding and creating interesting projects.</p>
+        <p>I'm a developer who loves building fast, minimal, and user-friendly websites.</p>
     </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>React, Node.js</li>
-            <li>Python, Django</li>
-            <li>SQL, MongoDB</li>
-        </ul>
-    </section>
-    
+
     <section id="projects">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Portfolio Website</h3>
-            <p>A responsive portfolio website built with HTML, CSS, and JavaScript.</p>
-            <img src="portfolio-image.jpg" alt="Portfolio Website Screenshot" width="300">
-            <a href="https://burka111.github.io/portfolio-website/" class="btn">View</a>
+        <div class="project-list">
+            <div class="project-card">
+                <h3>Python Calculator</h3>
+                <p>A simple CLI calculator built with Python.</p>
+                <a href="https://github.com/Burka111/python-calculator">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Portfolio Website</h3>
+                <p>My personal portfolio website built with HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/Burka111/portfolio-website">View on GitHub</a>
+            </div>
         </div>
     </section>
-    
+
     <section id="contact">
         <h2>Contact</h2>
-        <p>Get in touch with me via <a href="mailto:example@example.com">email</a> or <a href="https://github.com/burka111">GitHub</a>.</p>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit" class="btn">Send</button>
-        </form>
+        <p>Want to work together? Let's connect!</p>
+        <a href="mailto:your@email.com" class="btn">Email Me</a>
     </section>
-    
+
     <footer>
-        <p>&copy; 2025 My Portfolio</p>
+        <p>&copy; 2024 Burka. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
