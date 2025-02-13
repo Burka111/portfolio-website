@@ -11,3 +11,10 @@ This website showcases my skills, projects, and contact information.
 
 ## 📂 Project Structure  
 
+## 📌 To-Do List  
+Here are some planned improvements for the portfolio:  
+- [ ] Add a contact form  
+- [ ] Improve mobile responsiveness  
+- [ ] Optimize images for better performance  
+- [ ] Add animations for a better user experience  
+- [ ] Implement a dark mode option  
